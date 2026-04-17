@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Avanthi Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Welcome Screen -->
+<div id="welcomeScreen" class="welcome-screen">
+  <div class="welcome-card">
+    <h1>Welcome to Avanthi Chatbot</h1>
+    <p>Your smart college assistant</p>
+    <button id="startBtn">Get Started</button>
+  </div>
+</div>
+
+<!-- Chat App -->
+<div id="chatApp" class="chat-app">
+  <div class="chat-container">
+
+    <div class="chat-header">🤖 College Assistant</div>
+
+    <!-- Quick Buttons -->
+    <div class="quick-buttons">
+      <button onclick="quickAsk('library')">Library</button>
+      <button onclick="quickAsk('lab 1')">Lab 1</button>
+      <button onclick="quickAsk('AI faculty')">AI Faculty</button>
+    </div>
+
+    <div id="chatBox" class="chat-box"></div>
+
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Ask something...">
+      <button onclick="sendMessage()">Send</button>
+      <button onclick="startVoice()">🎤</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
